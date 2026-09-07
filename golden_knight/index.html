@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <div id="game-container">
+
+        <div id="head">
+            <h3>Golden Knight</h3>
+            <div id="score">
+                <h3>Score: <span id="scoreValue">0</span></h3>
+            </div>
+        </div>
+
+        <canvas id="game" width="512" height="512">
+
+        </canvas>
+
+        <div id="verbs">
+            <div class="verb" data-verb="walk">Walk</div>
+            <div class="verb" data-verb="look">Look</div>
+            <div class="verb" data-verb="use">Use</div>
+            <div class="verb" data-verb="talk">Talk</div>
+            <div class="verb" data-verb="pickup">Pickup</div>
+            <div class="verb" data-verb="open">Open</div>
+        </div>
+
+        <div id="inventory">
+
+        </div>
+
+        <div id="conversation-ui" class="conversation hidden">
+            <div id="conversation-options"></div>
+        </div>
+
+    </div>
+
+    <div id="debug-tools">
+
+        <label>
+            <input type="checkbox" id="chDebugHotspots">
+            Hotspots
+        </label>
+
+        <label>
+            <input type="checkbox" id="chDebugWalkmaps">
+            Walkmap
+        </label>
+
+        <select id="myDropdown">
+            <option value="">-- Select an Room --</option>
+        </select>
+
+    </div>
+
+    <script type="module" src="./game.js"></script>
+
+</body>
+
+</html>

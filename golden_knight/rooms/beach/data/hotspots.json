@@ -1,0 +1,201 @@
+[
+  {
+    "id": "palm",
+    "name": "palm",
+    "type": "hotspot",
+    "worldX": 109,
+    "worldY": 175,
+    "width": 130,
+    "height": 115,
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "hotspot": {
+      "name": "palm",
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 130,
+      "height": 115
+    },
+    "walkTarget": {
+      "x": 65,
+      "y": 57.5
+    },
+    "collider": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 0,
+      "height": 0
+    },
+    "collides": false,
+    "occludes": false,
+    "trigger": false
+  },
+  {
+    "id": "mountain",
+    "name": "mountain",
+    "type": "hotspot",
+    "worldX": 246,
+    "worldY": 211,
+    "width": 137,
+    "height": 80,
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "hotspot": {
+      "name": "mountain",
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 137,
+      "height": 80
+    },
+    "walkTarget": {
+      "x": 68.5,
+      "y": 40
+    },
+    "collider": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 0,
+      "height": 0
+    },
+    "collides": false,
+    "occludes": false,
+    "trigger": false
+  },
+  {
+    "id": "to_forrest",
+    "type": "hotspot",
+    "action": "exit",
+    "target": "forrest",
+    "worldX": 395,
+    "worldY": 464,
+    "width": 112,
+    "height": 45,
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "hotspot": {
+      "name": "Forrest",
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 112,
+      "height": 45
+    },
+    "walkTarget": {
+      "x": 56,
+      "y": 22.5
+    },
+    "collider": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 0,
+      "height": 0
+    },
+    "collides": false,
+    "occludes": false,
+    "trigger": true
+  },
+  {
+    "id": "water",
+    "name": "water",
+    "type": "hotspot",
+    "worldX": 2,
+    "worldY": 297,
+    "width": 506,
+    "height": 99,
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "hotspot": {
+      "name": "water",
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 506,
+      "height": 99
+    },
+    "walkTarget": {
+      "x": 253,
+      "y": 49.5
+    },
+    "collider": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 0,
+      "height": 0
+    },
+    "collides": false,
+    "occludes": false,
+    "trigger": false
+  },
+  {
+    "id": "sky",
+    "name": "sky",
+    "type": "hotspot",
+    "worldX": 4,
+    "worldY": 7,
+    "width": 500,
+    "height": 162,
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "hotspot": {
+      "name": "sky",
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 500,
+      "height": 162
+    },
+    "walkTarget": {
+      "x": 250,
+      "y": 81
+    },
+    "collider": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 0,
+      "height": 0
+    },
+    "collides": false,
+    "occludes": false,
+    "trigger": false
+  },
+  {
+    "id": "rock",
+    "name": "rock",
+    "type": "hotspot",
+    "worldX": 399,
+    "worldY": 400,
+    "width": 104,
+    "height": 56,
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "hotspot": {
+      "name": "rock",
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 104,
+      "height": 56
+    },
+    "walkTarget": {
+      "x": 52,
+      "y": 28
+    },
+    "collider": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 0,
+      "height": 0
+    },
+    "collides": false,
+    "occludes": false,
+    "trigger": false
+  }
+]

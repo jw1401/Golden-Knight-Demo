@@ -1,0 +1,129 @@
+{
+  "id": "blue_knight_dialog",
+  "dialog": {
+    "start": {
+      "text": "Hallo, fremder Ritter?",
+      "playerIntro": "Hallo, blauer Ritter!",
+      "onEnter": [
+        {
+          "action": "set_flag",
+          "flag": "talked_to_knight",
+          "value": true
+        }
+      ],
+      "options": [
+        {
+          "text": "Was machst du hier?",
+          "next": "quest",
+          "condition": {
+            "flag": "quest_leaf_done",
+            "equals": false
+          }
+        },
+        {
+          "text": "Hier ist das Blatt!",
+          "condition": {
+            "flag": "has_leaf",
+            "equals": true
+          },
+          "next": "node_success",
+          "onSelect": [
+            {
+              "action": "complete_quest",
+              "questId": "find_leaf"
+            },
+            {
+              "action": "set_flag",
+              "flag": "has_leaf",
+              "value": false
+            },
+            {
+              "action": "set_flag",
+              "flag": "quest_leaf_done",
+              "value": true
+            },
+            {
+              "action": "give_item",
+              "item": "leaf"
+            },
+            {
+              "action": "call_action",
+              "method": "quest_done",
+              "args": "You mastered the quest!!!"
+            }
+          ]
+        },
+        {
+          "text": "Ich habe das Blatt, noch nicht.",
+          "condition": {
+            "flag": "find_leaf",
+            "equals": true
+          },
+          "next": "bye",
+          "options": []
+        },
+        {
+          "text": "Okay, dann gehe ich wieder!?",
+          "onSelect": [],
+          "next": "bye"
+        },
+        {
+          "text": "Und sonst so!?",
+          "next": "work"
+        }
+      ]
+    },
+    "quest": {
+      "text": "Bitte bring mir ein Blatt. Ich brauche es für mein geheimes Projekt.",
+      "options": [
+        {
+          "text": "Okay, ich werde es finden!",
+          "next": "bye",
+          "onSelect": [
+            {
+              "action": "start_quest",
+              "questId": "find_leaf"
+            }
+          ],
+          "options": []
+        },
+        {
+          "text": "Ich kann dir nicht helfen!?",
+          "next": "bye",
+          "options": []
+        }
+      ]
+    },
+    "node_success": {
+      "text": "Super Danke!!!",
+      "next": "bye",
+      "options": []
+    },
+    "work": {
+      "text": "Ich arbeite an einem geheimen Projekt.",
+      "options": [
+        {
+          "text": "Erzähl mehr!",
+          "next": "secret"
+        },
+        {
+          "text": "Okay, viel Spaß.",
+          "next": "bye"
+        }
+      ]
+    },
+    "secret": {
+      "text": "Es ist wirklich geheim!",
+      "options": [
+        {
+          "text": "Bitte?",
+          "next": "bye"
+        }
+      ]
+    },
+    "bye": {
+      "text": "Bis später!",
+      "options": []
+    }
+  }
+}

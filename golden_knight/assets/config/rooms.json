@@ -1,0 +1,22 @@
+[
+  {
+    "name": "beach",
+    "class": "BeachRoom",
+    "path": "./rooms/beach/beach.json"
+  },
+  {
+    "name": "forrest",
+    "class": "ForrestRoom",
+    "path": "./rooms/forrest/forrest.json"
+  },
+  {
+    "name": "woods",
+    "class": "WoodsRoom",
+    "path": "./rooms/woods/woods.json"
+  },
+  {
+    "name": "harbour",
+    "class": "HarbourRoom",
+    "path": "./rooms/harbour/harbour.json"
+  }
+]

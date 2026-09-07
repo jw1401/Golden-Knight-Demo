@@ -1,0 +1,32 @@
+{
+    "leaf": {
+        "name": "Leaf",
+        "icon": "assets/items/leaf.png",
+        "description": "A large green leaf from a tree."
+    },
+    "rope": {
+        "name": "Rope",
+        "icon": "assets/items/rope.png",
+        "description": "A sturdy rope."
+    },
+    "leaf_with_water": {
+        "name": "Leaf full of water",
+        "icon": "assets/items/leaf_full_water.png",
+        "description": "A large green leaf from a tree filled with water."
+    },
+    "bucket": {
+        "name": "Bucket",
+        "icon": "assets/items/bucket.png",
+        "description": "A large empty bucket!"
+    },
+    "_bucket_full_": {
+        "name": "Bucket full of water",
+        "icon": "assets/items/bucket_full.png",
+        "description": "A bucket full of pure water!"
+    },
+    "treasure": {
+        "name": "Treasure",
+        "icon": "assets/items/treasure.png",
+        "description": "It is a treasure. I am rich..."
+    }
+}

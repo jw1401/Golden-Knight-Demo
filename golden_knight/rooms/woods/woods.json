@@ -1,0 +1,6 @@
+{
+  "background": "rooms/woods/data/woods.png",
+  "occlusion": null,
+  "hotspots": "rooms/woods/data/hotspots.json",
+  "walkmap": "rooms/woods/data/walkmap.json"
+}

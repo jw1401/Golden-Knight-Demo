@@ -1,0 +1,6 @@
+{
+  "player_west": { "folder": "./assets/animations/player/west/", "frameCount": 6, "fps": 12 },
+  "player_east": { "folder": "./assets/animations/player/east/", "frameCount": 6, "fps": 12 },
+  "player_south": { "folder": "./assets/animations/player/south/", "frameCount": 6, "fps": 12 },
+  "player_north": { "folder": "./assets/animations/player/north/", "frameCount": 6, "fps": 12 }
+}

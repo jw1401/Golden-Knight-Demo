@@ -1,0 +1,6 @@
+{
+    "background": "./rooms/forrest/data/background/forrest.png",
+    "hotspots": "./rooms/forrest/data/hotspots.json",
+    "walkmap": "./rooms/forrest/data/walkmap.json",
+    "occlusion": "./rooms/forrest/data/occlusion.json"
+}

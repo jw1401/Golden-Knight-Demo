@@ -1,0 +1,100 @@
+[
+  {
+    "id": "palm",
+    "type": "hotspot",
+    "worldX": 10,
+    "worldY": 10,
+    "width": 140,
+    "height": 160,
+    "pivot": {
+      "x": 0.5,
+      "y": 1.0
+    },
+    "hotspot": {
+      "name": "Palm",
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 140,
+      "height": 160
+    },
+    "walkTarget": {
+      "x": 148,
+      "y": 180
+    },
+    "collider": {
+      "offsetX": 20,
+      "offsetY": 140,
+      "width": 100,
+      "height": 20
+    },
+    "collides": true,
+    "occludes": true,
+    "trigger": false
+  },
+  {
+    "id": "water",
+    "type": "hotspot",
+    "worldX": 70,
+    "worldY": 250,
+    "width": 100,
+    "height": 100,
+    "pivot": {
+      "x": 0,
+      "y": 0
+    },
+    "hotspot": {
+      "name": "Water",
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 100,
+      "height": 100
+    },
+    "walkTarget": {
+      "x": 130,
+      "y": 50
+    },
+    "collider": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 100,
+      "height": 100
+    },
+    "collides": false,
+    "occludes": false,
+    "trigger": false
+  },
+  {
+    "id": "hotspot_to_forrest",
+    "type": "hotspot",
+    "action": "exit",
+    "target": "forrest",
+    "worldX": 80,
+    "worldY": 185,
+    "width": 70,
+    "height": 50,
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "hotspot": {
+      "name": "Forrest",
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 70,
+      "height": 50
+    },
+    "walkTarget": {
+      "x": 0,
+      "y": 0
+    },
+    "collider": {
+      "offsetX": 0,
+      "offsetY": 0,
+      "width": 0,
+      "height": 0
+    },
+    "collides": false,
+    "occludes": false,
+    "trigger": true
+  }
+]

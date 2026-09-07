@@ -1,0 +1,25 @@
+{
+    "npc_test_charakter": {
+        "spritePath": "./assets/animations/npc/",
+        "charakterWidth": 50,
+        "charakterHeight": 50,
+        "debug": false,
+        "speed": 0.65,
+        "minDistance": 40,
+        "offsetY": 8
+    },
+    "player": {
+        "spritePath": "./assets/animations/player/",
+        "playerWidth": 68,
+        "playerHeight": 68,
+        "debug": false,
+        "collider": {
+            "offsetX": -20,
+            "offsetY": -10,
+            "width": 40,
+            "height": 10
+        },
+        "offsetY": 8,
+        "speed": 1.5
+    }
+}

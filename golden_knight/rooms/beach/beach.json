@@ -1,0 +1,6 @@
+{
+    "background": "rooms/beach/data/beach.png",
+    "hotspots": "rooms/beach/data/hotspots.json",
+    "walkmap": "rooms/beach/data/walkmap.json",
+    "occlusion": null
+}

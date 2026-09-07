@@ -1,0 +1,284 @@
+[
+    {
+        "id": "trigger_zone",
+        "type": "trigger",
+        "worldX": 365,
+        "worldY": 250,
+        "pivot": {
+            "x": 0.5,
+            "y": 1.0
+        },
+        "collider": {
+            "offsetX": -2.5,
+            "offsetY": -100,
+            "width": 5,
+            "height": 100
+        },
+        "collides": false,
+        "occludes": false,
+        "trigger": true
+    },
+    {
+        "id": "water",
+        "type": "hotspot",
+        "worldX": 70,
+        "worldY": 250,
+        "pivot": {
+            "x": 0,
+            "y": 0
+        },
+        "hotspot": {
+            "name": "Water",
+            "offsetX": 0,
+            "offsetY": 0,
+            "width": 100,
+            "height": 100
+        },
+        "walkTarget": {
+            "x": 130,
+            "y": 50
+        }
+    },
+    {
+        "id": "palm",
+        "type": "hotspot",
+        "worldX": 80,
+        "worldY": 170,
+        "pivot": {
+            "x": 0.5,
+            "y": 1.0
+        },
+        "hotspot": {
+            "name": "Palm",
+            "offsetX": -70,
+            "offsetY": -160,
+            "width": 140,
+            "height": 160
+        },
+        "walkTarget": {
+            "x": 80,
+            "y": 30
+        },
+        "collides": false,
+        "occludes": false,
+        "trigger": false
+    },
+    {
+        "id": "rope",
+        "type": "gameObject",
+        "worldX": 300,
+        "worldY": 400,
+        "pivot": {
+            "x": 0.5,
+            "y": 1.0
+        },
+        "sprite": {
+            "img": "assets/items/rope.png",
+            "width": 28,
+            "height": 20
+        },
+        "hotspot": {
+            "name": "Rope",
+            "offsetX": -15,
+            "offsetY": -24,
+            "width": 30,
+            "height": 30
+        },
+        "walkTarget": {
+            "x": -35,
+            "y": 0
+        },
+        "collider": {
+            "offsetX": -10,
+            "offsetY": -5,
+            "width": 20,
+            "height": 5
+        },
+        "collides": false,
+        "occludes": true,
+        "trigger": true
+    },
+    {
+        "id": "bucket",
+        "type": "gameObject",
+        "worldX": 200,
+        "worldY": 290,
+        "sprite": {
+            "img": "assets/items/bucket.png",
+            "width": 40,
+            "height": 40
+        },
+        "collides": true,
+        "occludes": true,
+        "trigger": false,
+        "hotspot": {
+            "name": "Bucket",
+            "offsetX": -25,
+            "offsetY": -45,
+            "width": 50,
+            "height": 50
+        },
+        "walkTarget": {
+            "x": 30,
+            "y": 0
+        },
+        "pivot": {
+            "x": 0.5,
+            "y": 1.0
+        },
+        "collider": {
+            "offsetX": -20,
+            "offsetY": -10,
+            "width": 40,
+            "height": 10
+        }
+    },
+    {
+        "id": "fire",
+        "type": "gameObject",
+        "worldX": 400,
+        "worldY": 240,
+        "pivot": {
+            "x": 0.5,
+            "y": 1.0
+        },
+        "sprite": {
+            "img": null,
+            "width": 68,
+            "height": 68,
+            "animation": {
+                "id": "fire",
+                "folder": "assets/animations/fire/",
+                "frameCount": 3,
+                "fps": 10,
+                "loop": true
+            }
+        },
+        "hotspot": {
+            "name": "Fire",
+            "offsetX": -39,
+            "offsetY": -73,
+            "width": 78,
+            "height": 78
+        },
+        "collider": {
+            "offsetX": -20,
+            "offsetY": -20,
+            "width": 40,
+            "height": 10
+        },
+        "walkTarget": {
+            "x": -60,
+            "y": -10
+        },
+        "collides": true,
+        "occludes": true,
+        "trigger": false
+    },
+    {
+        "id": "blue_knight",
+        "type": "npc",
+        "charakter": {
+            "id": "blue_knight",
+            "spritePath": "./assets/animations/npc/",
+            "debug": false,
+            "speed": 0.65,
+            "minDistance": 40,
+            "offsetY": 8,
+            "width": 68,
+            "height": 68,
+            "dialog": "./rooms/forrest/data/dialog_blue_knight.json",
+            "img": null
+        },
+        "worldX": 280,
+        "worldY": 300,
+        "pivot": {
+            "x": 0.5,
+            "y": 1.0
+        },
+        "hotspot": {
+            "name": "Blue Knight",
+            "offsetX": -30,
+            "offsetY": -64,
+            "width": 60,
+            "height": 60
+        },
+        "collider": {
+            "offsetX": -20,
+            "offsetY": -10,
+            "width": 40,
+            "height": 10
+        },
+        "walkTarget": {
+            "x": -34,
+            "y": 0
+        },
+        "collides": true,
+        "occludes": true,
+        "trigger": false
+    },
+    {
+        "id": "hotspot_to_woods",
+        "type": "hotspot",
+        "action": "exit",
+        "target": "woods",
+        "worldX": 439,
+        "worldY": 180,
+        "pivot": {
+            "x": 0.0,
+            "y": 0.0
+        },
+        "hotspot": {
+            "name": "Woods",
+            "offsetX": 0,
+            "offsetY": 0,
+            "width": 69,
+            "height": 51
+        },
+        "walkTarget": {
+            "x": 34.5,
+            "y": 25.5
+        },
+        "collider": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "width": 0,
+            "height": 0
+        },
+        "collides": false,
+        "occludes": false,
+        "trigger": true
+    },
+    {
+        "id": "hotspot_to_beach",
+        "type": "hotspot",
+        "action": "exit",
+        "target": "beach",
+        "worldX": 10,
+        "worldY": 180,
+        "pivot": {
+            "x": 0.0,
+            "y": 0.0
+        },
+        "hotspot": {
+            "name": "Beach",
+            "offsetX": 0,
+            "offsetY": 0,
+            "width": 105,
+            "height": 50
+        },
+        "walkTarget": {
+            "x": 20,
+            "y": 25
+        },
+        "collider": {
+            "offsetX": 0,
+            "offsetY": 0,
+            "width": 0,
+            "height": 0
+        },
+        "collides": false,
+        "occludes": false,
+        "trigger": true
+    }
+]
