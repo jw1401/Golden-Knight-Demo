@@ -1,5 +1,5 @@
 
-import { Room } from "../../../engine/dist/aventra.js";
+import { Room } from "../../engine/dist/aventra.js";
 
 
 export class ForrestRoom extends Room {

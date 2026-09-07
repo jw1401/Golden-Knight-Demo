@@ -1,4 +1,4 @@
-import { Engine } from "../engine/dist/aventra.js";
+import { Engine } from "./engine/dist/aventra.js";
 import { InventoryUI, VerbsUI, DebugUI, ConversationUI } from "./ui/index.js";
 import * as Rooms from "./rooms/index.js";
 
