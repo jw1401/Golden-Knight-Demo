@@ -19,7 +19,7 @@ await engine.init(Rooms, "./assets/config/rooms.json")
 engine.changeRoom(engine.rooms["forrest"], { x: 240, y: 280 });
 
 // Setup debug-layer
-const debug = new DebugUI(engine);
+// const debug = new DebugUI(engine);
 
 // Start Engine loop
 engine.loop();

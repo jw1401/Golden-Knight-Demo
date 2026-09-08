@@ -13,10 +13,5 @@
     "name": "woods",
     "class": "WoodsRoom",
     "path": "./rooms/woods/woods.json"
-  },
-  {
-    "name": "harbour",
-    "class": "HarbourRoom",
-    "path": "./rooms/harbour/harbour.json"
   }
 ]
